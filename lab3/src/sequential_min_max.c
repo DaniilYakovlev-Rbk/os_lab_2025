@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
     printf("array_size is a positive number\n");
     return 1;
   }
-
+  
   int *array = malloc(array_size * sizeof(int));
   GenerateArray(array, array_size, seed);
   struct MinMax min_max = GetMinMax(array, 0, array_size);
